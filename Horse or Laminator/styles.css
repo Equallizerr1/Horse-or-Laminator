@@ -1,0 +1,47 @@
+body {
+    background-color: brown;
+    vertical-align: middle;
+    margin:0 auto;
+    max-width: fit-content;
+    text-align: center;
+}
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    text-align: center;
+    font-size: 30px;
+}
+
+img {
+    width: 400px;
+    height: 300px;
+}
+
+button {
+    font-size: 28px;
+    background-color: #142164;
+    border: 1px solid white;
+    color: white;
+    padding: 13px 30px;
+    text-align: center;
+    display: inline-block;
+    transition-duration: 0.4s;
+    width: 100%;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    cursor: pointer;
+}
+button:hover {
+    color: white;
+    opacity: 1;
+}
