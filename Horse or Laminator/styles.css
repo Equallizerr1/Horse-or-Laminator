@@ -1,9 +1,16 @@
 body {
     background-color: brown;
     vertical-align: middle;
-    margin:0 auto;
+    margin: 0 auto;
     max-width: fit-content;
     text-align: center;
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 48px;
+    padding-top: 5%;
+    padding-bottom: 2%;
 }
 
 .grid-container {
@@ -14,7 +21,7 @@ body {
     padding: 10px;
 }
 
-.grid-container > div {
+.grid-container>div {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid black;
     text-align: center;
@@ -30,7 +37,7 @@ button {
     font-size: 28px;
     background-color: #142164;
     border: 1px solid white;
-    color: white;
+    color: antiquewhite;
     padding: 13px 30px;
     text-align: center;
     display: inline-block;
@@ -41,7 +48,8 @@ button {
     display: inline-block;
     cursor: pointer;
 }
+
 button:hover {
-    color: white;
+    color: antiquewhite;
     opacity: 1;
 }
