@@ -11,10 +11,15 @@
 			<div><img src="horse.jpg" /></div>
 			<div><img src="laminator.jpg" /></div>
 			<div>
-				<button id="horse-button" onclick="buttonClick(this.id)">Horse</button>
+				<button id="horse" onclick="buttonClick(this.id)">Horse</button>
 			</div>
-			<div id="laminator-button"><button>Laminator</button></div>
+			<div id="laminator" onclick="buttonClick(this.id)">
+				<button>Laminator</button>
+			</div>
 		</div>
-		<script src="scripts.js"></script>
+		<div class="counter">
+			<div id="counter-value">Score 0</div>
+		</div>
+		<script src="scripts.js" defer></script>
 	</body>
 </html>
