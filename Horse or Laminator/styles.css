@@ -1,13 +1,22 @@
 p {
     font-size: xx-large;
+    text-decoration-color: antiquewhite;
+    border: 2px solid white;
+    color: antiquewhite;
+    background-color: #2196F3;
 }
 
 body {
-    background-color: brown;
+    background-color: rgb(104, 62, 62);
     vertical-align: middle;
     margin: 0 auto;
     max-width: fit-content;
     text-align: center;
+    border: 10px solid black;
+}
+
+.body-div {
+    background-color: brown;
 }
 
 h1 {
@@ -23,11 +32,13 @@ h1 {
     gap: 10px;
     background-color: #2196F3;
     padding: 10px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
 }
 
 .grid-container>div {
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid black;
+    border: 5px solid black;
     text-align: center;
     font-size: 30px;
 }
@@ -40,7 +51,7 @@ img {
 button {
     font-size: 28px;
     background-color: #142164;
-    border: 1px solid white;
+    border: 2px solid white;
     color: antiquewhite;
     padding: 13px 30px;
     text-align: center;
@@ -61,23 +72,25 @@ button:hover {
 #counter-value {
     height: 50px;
     min-width: 120px;
-    border-radius: 10px;
     background-color: rgba(255, 0, 0, 0.187);
     margin-top: 20px;
     font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 5px solid rgb(0, 0, 0);
+    border-bottom: 5px solid rgb(0, 0, 0);
 }
 
 #highscore-value {
     height: 50px;
     min-width: 120px;
-    border-radius: 10px;
     background-color: rgba(255, 0, 0, 0.187);
     margin-top: 20px;
     font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 5px solid rgb(0, 0, 0);
+    border-bottom: 5px solid rgb(0, 0, 0);
 }

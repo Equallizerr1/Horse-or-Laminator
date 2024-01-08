@@ -6,23 +6,25 @@
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
-		<h1>Horse or Laminator</h1>
-		<div class="grid-container">
-			<div><img src="horse.jpg" /></div>
-			<div><img src="laminator.jpg" /></div>
-			<div>
-				<button id="horse" onclick="buttonClick(this.id)">Horse</button>
+		<div class="body-div">
+			<h1>Horse or Laminator</h1>
+			<div class="grid-container">
+				<div><img src="horse.jpg" /></div>
+				<div><img src="laminator.jpg" /></div>
+				<div>
+					<button id="horse" onclick="buttonClick(this.id)">Horse</button>
+				</div>
+				<div id="laminator" onclick="buttonClick(this.id)">
+					<button>Laminator</button>
+				</div>
 			</div>
-			<div id="laminator" onclick="buttonClick(this.id)">
-				<button>Laminator</button>
+			<div class="counter">
+				<div class="double-border"><p>Score</p></div>
+				<div id="counter-value">0</div>
+				<div class="double-border"><p>Score</p></div>
+				<div id="highscore-value">0</div>
 			</div>
+			<script src="scripts.js" defer></script>
 		</div>
-		<div class="counter">
-			<p>Score</p>
-			<div id="counter-value">0</div>
-			<p>High Score</p>
-			<div id="highscore-value">0</div>
-		</div>
-		<script src="scripts.js" defer></script>
 	</body>
 </html>
