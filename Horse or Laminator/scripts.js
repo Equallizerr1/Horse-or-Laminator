@@ -1,41 +1,25 @@
+let counter = 0;
+const highScores = [];
+
+const counterValue = document.getElementById("counter-value");
+const highScoreValue = document.getElementById("highscore-value");
+
 function buttonClick(clickedButton) {
 	function innerButton() {
 		const choice = clickedButton;
 		function rng() {
-			let counter = 0;
 			const choiceArray = ["horse", "laminator"];
 			const choiceRng = choiceArray[(choiceArray.length * Math.random()) | 0];
 			if (choice === choiceRng) {
-				return true;
-			} else return false;
+				counter++;
+				counterValue.innerHTML = counter;
+				highScores.push(counter);
+				highScoreValue.innerHTML = Math.max(...highScores);
+			} else counter = 0;
+			counterValue.innerHTML = counter;
+			return counter;
 		}
 		return rng();
 	}
 	return innerButton();
 }
-
-buttonClick("horse");
-console.log(buttonClick("horse"));
-buttonClick("horse");
-buttonClick("laminator");
-
-// const horseButtonObject = document.getElementById("horse");
-// const horseButton = horseButtonObject.id;
-// buttonClick(horseButton);
-
-//const selectedButton = buttonClick(document.getElementById("horse"));
-//console.log(selectedButton);
-
-function rng() {
-	const choiceArray = ["horse", "laminator"];
-	const choiceRng = choiceArray[(choiceArray.length * Math.random()) | 0];
-	return choiceRng;
-}
-// const rngFunc = rng();
-// console.log(rngFunc);
-
-// const answerChecker = (rngFunc, selectedButton) => {
-// 	//console.log(rngFunc, selectedButton);
-// };
-
-// answerChecker(rngFunc, selectedButton);

@@ -1,3 +1,7 @@
+p {
+    font-size: xx-large;
+}
+
 body {
     background-color: brown;
     vertical-align: middle;
@@ -55,6 +59,18 @@ button:hover {
 }
 
 #counter-value {
+    height: 50px;
+    min-width: 120px;
+    border-radius: 10px;
+    background-color: rgba(255, 0, 0, 0.187);
+    margin-top: 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#highscore-value {
     height: 50px;
     min-width: 120px;
     border-radius: 10px;
